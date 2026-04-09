@@ -1,0 +1,9 @@
+/home/axisrooms/eclipse-workspace/AxisRoomsAutomation/src/test/java/base/BaseTest.java
+/home/axisrooms/eclipse-workspace/AxisRoomsAutomation/src/test/java/api/InventoryAPI.java
+/home/axisrooms/eclipse-workspace/AxisRoomsAutomation/src/test/java/testcases/LoginTest.java
+/home/axisrooms/eclipse-workspace/AxisRoomsAutomation/src/test/java/utilities/Store.java
+/home/axisrooms/eclipse-workspace/AxisRoomsAutomation/src/test/java/com/axisrooms/AxisRoomsAutomation/AppTest.java
+/home/axisrooms/eclipse-workspace/AxisRoomsAutomation/src/test/java/pages/LoginPage.java
+/home/axisrooms/eclipse-workspace/AxisRoomsAutomation/src/test/java/utilities/OTPReader.java
+/home/axisrooms/eclipse-workspace/AxisRoomsAutomation/src/test/java/utilities/EmailOTPReaderTest.java
+/home/axisrooms/eclipse-workspace/AxisRoomsAutomation/src/test/java/api/PriceAPI.java
