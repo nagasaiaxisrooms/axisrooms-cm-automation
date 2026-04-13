@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="testcases.LoginTest" time="30.759" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="testcases.LoginTest" time="52.919" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="25.0.2+10-LTS-69"/>
@@ -59,8 +59,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="testcases.LoginTest" name="validLoginTest" time="8.529"/>
-  <testcase classname="testcases.LoginTest" name="loginWithUnregisteredEmail" time="6.411"/>
-  <testcase classname="testcases.LoginTest" name="loginWithWrongPassword" time="6.353"/>
-  <testcase classname="testcases.LoginTest" name="validLoginwithOTPLogin" time="9.466"/>
+  <testcase classname="testcases.LoginTest" name="validLoginTest" time="8.506"/>
+  <testcase classname="testcases.LoginTest" name="loginWithUnregisteredEmail" time="6.331"/>
+  <testcase classname="testcases.LoginTest" name="loginWithWrongPassword" time="6.344"/>
+  <testcase classname="testcases.LoginTest" name="validLoginwithOTPLogin" time="9.476"/>
+  <testcase classname="testcases.LoginTest" name="inventoryAndPricingSyncTest" time="22.262"/>
 </testsuite>

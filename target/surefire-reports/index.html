@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-testcases_LoginTest" class="show-methods passed suite-testcases_LoginTest"> (show)</a> <!-- show-methods passed suite-testcases_LoginTest -->
                     </span>
                     <div class="method-list-content passed suite-testcases_LoginTest">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testcases_LoginTest" title="testcases.LoginTest" class="method navigator-link" hash-for-method="inventoryAndPricingSyncTest">inventoryAndPricingSyncTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-testcases_LoginTest" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithUnregisteredEmail">loginWithUnregisteredEmail</a> <!-- method navigator-link -->
@@ -139,6 +144,13 @@
               <span class="class-name">testcases.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="inventoryAndPricingSyncTest">
+                  </a> <!-- inventoryAndPricingSyncTest -->
+                  <span class="method-name">inventoryAndPricingSyncTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="loginWithUnregisteredEmail">
@@ -220,28 +232,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validLoginwithOTPLogin')
+data.setCell(0, 1, 'inventoryAndPricingSyncTest')
 data.setCell(0, 2, 'testcases.LoginTest')
-data.setCell(0, 3, 9466);
+data.setCell(0, 3, 22262);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validLoginTest')
+data.setCell(1, 1, 'validLoginwithOTPLogin')
 data.setCell(1, 2, 'testcases.LoginTest')
-data.setCell(1, 3, 8527);
+data.setCell(1, 3, 9476);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginWithUnregisteredEmail')
+data.setCell(2, 1, 'validLoginTest')
 data.setCell(2, 2, 'testcases.LoginTest')
-data.setCell(2, 3, 6412);
+data.setCell(2, 3, 8504);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginWithWrongPassword')
 data.setCell(3, 2, 'testcases.LoginTest')
-data.setCell(3, 3, 6353);
+data.setCell(3, 3, 6344);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginWithUnregisteredEmail')
+data.setCell(4, 2, 'testcases.LoginTest')
+data.setCell(4, 3, 6332);
 window.suiteTableData['testcases_LoginTest']= { tableData: data, tableDiv: 'times-div-testcases_LoginTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 52 seconds</span>
               <div id="times-div-testcases_LoginTest">
               </div> <!-- times-div-testcases_LoginTest -->
             </div> <!-- times-div -->
@@ -274,47 +290,59 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLoginTest</span>
-                <span class="method-start">3256 ms</span>
+                <span class="method-start">6297 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11786 ms</span>
+                <span class="method-start">14803 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">11869 ms</span>
+                <span class="method-start">14890 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithUnregisteredEmail</span>
-                <span class="method-start">14338 ms</span>
+                <span class="method-start">19624 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20750 ms</span>
+                <span class="method-start">25956 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">20826 ms</span>
+                <span class="method-start">26024 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithWrongPassword</span>
-                <span class="method-start">23164 ms</span>
+                <span class="method-start">32115 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29518 ms</span>
+                <span class="method-start">38459 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">29591 ms</span>
+                <span class="method-start">38535 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLoginwithOTPLogin</span>
-                <span class="method-start">32009 ms</span>
+                <span class="method-start">43194 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">41476 ms</span>
+                <span class="method-start">52670 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">52750 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">inventoryAndPricingSyncTest</span>
+                <span class="method-start">59748 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">82011 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

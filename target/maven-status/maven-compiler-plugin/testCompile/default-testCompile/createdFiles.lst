@@ -1,2 +1,4 @@
 api/InventoryAPI.class
+pages/ChannelStatusPage.class
+pages/DashboardPage.class
 api/PriceAPI.class
