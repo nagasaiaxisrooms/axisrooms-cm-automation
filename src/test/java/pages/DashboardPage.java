@@ -39,6 +39,12 @@ public class DashboardPage {
 	
 	@FindBy(xpath = "//a[contains(text(), 'Channel Status') and contains(@href, 'viewArcChannelsStatus')]")
 	private WebElement channelStatusOption;
+
+	@FindBy(xpath = "//a[contains(text(), 'Inventory & Prices')]")
+	private WebElement inventoryAndPricesOption;
+	
+	@FindBy(xpath = "//a[contains(text(), 'Logs') or contains(text(), 'Sync History')]")
+	private WebElement logsOption;
 	
 	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
@@ -93,6 +99,16 @@ public class DashboardPage {
 	public void clickChannelStatusOption() {
 		wait.until(ExpectedConditions.elementToBeClickable(channelStatusOption));
 		channelStatusOption.click();
+	}
+
+	public void clickInventoryAndPricesOption() {
+		wait.until(ExpectedConditions.elementToBeClickable(inventoryAndPricesOption));
+		inventoryAndPricesOption.click();
+	}
+	
+	public void clickLogsOption() {
+		wait.until(ExpectedConditions.elementToBeClickable(logsOption));
+		logsOption.click();
 	}
 	
 	public String getDashboardTitle() {

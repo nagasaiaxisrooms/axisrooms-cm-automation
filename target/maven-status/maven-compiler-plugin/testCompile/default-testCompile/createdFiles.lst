@@ -1,4 +1,15 @@
+testcases/LoginTest.class
+com/axisrooms/AxisRoomsAutomation/AppTest.class
+pages/InventoryAndPricesPage.class
+pages/SyncLogsPage.class
+utilities/Store.class
+api/OtaAPI.class
+pages/DashboardPage.class
+utilities/OTPReader.class
+testcases/EndToEndSyncTest.class
 api/InventoryAPI.class
 pages/ChannelStatusPage.class
-pages/DashboardPage.class
+utilities/EmailOTPReaderTest.class
+pages/LoginPage.class
+base/BaseTest.class
 api/PriceAPI.class

@@ -7,6 +7,7 @@ import base.BaseTest;
 import pages.LoginPage;
 import pages.DashboardPage;
 import pages.ChannelStatusPage;
+import pages.InventoryAndPricesPage;
 import utilities.EmailOTPReaderTest;
 
 public class LoginTest extends BaseTest {
@@ -151,16 +152,22 @@ public void inventoryAndPricingSyncTest() throws InterruptedException {
 	
 	login.enterOTP("123456");
 	login.verifyOTP();
-	Thread.sleep(5000);
+	Thread.sleep(3000);
 	
 	System.out.println("Navigating to Dashboard and Channel Manager...");
 	DashboardPage dashboard = new DashboardPage(driver);
+	
+	// try {
+	// 	dashboard.waitForDashboardToLoad();
+	// } catch (Exception e) {
+	// 	System.out.println("Dashboard title not visible yet, proceeding...");
+	// }
 	
 	dashboard.clickChannelManagerTab();
 	Thread.sleep(2000);
 	
 	dashboard.clickChannelStatusOption();
-	Thread.sleep(5000); // wait a bit more for page load
+	Thread.sleep(3000);
 	
 	System.out.println("Entering Hotel ID 1388 into search box...");
 	ChannelStatusPage channelStatus = new ChannelStatusPage(driver);
@@ -170,6 +177,37 @@ public void inventoryAndPricingSyncTest() throws InterruptedException {
 	System.out.println("Clicking Search Hotel Button...");
 	channelStatus.clickSearchHotel();
 	Thread.sleep(3000);
+
+	System.out.println("Clicking on the searched Hotel Link...");
+	channelStatus.clickHotelLink("1388");
+	Thread.sleep(3000);
+
+	System.out.println("Hovering over Manage Dropdown...");
+	channelStatus.hoverOverManageDropdown();
+	Thread.sleep(2000);
+
+	System.out.println("Clicking Inventory and Prices Option...");
+	dashboard.clickInventoryAndPricesOption();
+	Thread.sleep(3000);
+	
+	InventoryAndPricesPage inventoryAndPrices = new InventoryAndPricesPage(driver);
+	
+	// update new value of availability count for specific dates dynamically
+	System.out.println("Updating Availability Count for 20 Apr...");
+	inventoryAndPrices.updateInventory("20 Apr", "Certification Room1", "44");
+	Thread.sleep(1000);
+
+	System.out.println("Updating Availability Count for 24 Apr...");
+	inventoryAndPrices.updateInventory("24 Apr", "Certification Room1", "36");
+	Thread.sleep(1000);
+
+	System.out.println("Updating Availability Count for 27 Apr...");
+	inventoryAndPrices.updateInventory("27 Apr", "Certification Room1", "40");
+	Thread.sleep(2000);
+	
+	System.out.println("Clicking Save Button...");
+	inventoryAndPrices.clickSaveButton();
+	Thread.sleep(2000);
 	
 	System.out.println("Inventory and Pricing Sync Test Executed");
 }
