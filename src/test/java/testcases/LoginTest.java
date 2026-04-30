@@ -4,11 +4,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
-import pages.LoginPage;
-import pages.DashboardPage;
 import pages.ChannelStatusPage;
+import pages.DashboardPage;
 import pages.InventoryAndPricesPage;
-import utilities.EmailOTPReaderTest;
+import pages.LoginPage;
 
 public class LoginTest extends BaseTest {
 
@@ -193,22 +192,65 @@ public void inventoryAndPricingSyncTest() throws InterruptedException {
 	InventoryAndPricesPage inventoryAndPrices = new InventoryAndPricesPage(driver);
 	
 	// update new value of availability count for specific dates dynamically
-	System.out.println("Updating Availability Count for 20 Apr...");
-	inventoryAndPrices.updateInventory("20 Apr", "Certification Room1", "44");
+	System.out.println("Updating Availability Count for 29 Apr...");
+	inventoryAndPrices.updateInventory("29 Apr", "Certification Room1", "44");
 	Thread.sleep(1000);
 
-	System.out.println("Updating Availability Count for 24 Apr...");
-	inventoryAndPrices.updateInventory("24 Apr", "Certification Room1", "36");
+	System.out.println("Updating Availability Count for 30 Apr...");
+	inventoryAndPrices.updateInventory("30 Apr", "Certification Room1", "36");
 	Thread.sleep(1000);
 
-	System.out.println("Updating Availability Count for 27 Apr...");
-	inventoryAndPrices.updateInventory("27 Apr", "Certification Room1", "40");
+	System.out.println("Updating Availability Count for 1 May...");
+	inventoryAndPrices.updateInventory("1 May", "Certification Room1", "40");
 	Thread.sleep(2000);
 	
 	System.out.println("Clicking Save Button...");
 	inventoryAndPrices.clickSaveButton();
-	Thread.sleep(2000);
+	Thread.sleep(5000);
+
+	System.out.println("Closing the Modal...");
+	inventoryAndPrices.closeModal();
+	Thread.sleep(1000);
+
+	System.out.println("Clicking Toggle Rateplans...");
+	inventoryAndPrices.clickToggleRateplans();	
+	Thread.sleep(3000);
+
+	// update new value of price for specific dates dynamically
+	System.out.println("Updating Price for 29 Apr...");
+	inventoryAndPrices.updatePrice("29 Apr", "Certification Room1", "2410");
+	Thread.sleep(1000);
+
+	System.out.println("Updating Price for 30 Apr...");
+	inventoryAndPrices.updatePrice("30 Apr", "Certification Room1", "2430");
+	Thread.sleep(1000);
+
+	System.out.println("Updating Price for 1 May...");
+	inventoryAndPrices.updatePrice("1 May", "Certification Room1", "2440");
+	Thread.sleep(3000);
 	
+	// check if save button is displayed then click it else print message
+	if(inventoryAndPrices.isSaveButtonDisplayed()) {
+		System.out.println("Save Button is displayed");
+		System.out.println("Clicking Save Button...");
+		inventoryAndPrices.clickSaveButton();
+		Thread.sleep(5000);
+	} else {
+		System.out.println("Save Button is not displayed");
+	}
+
+	// System.out.println("Clicking Sync Inv Rates Button...");
+	// inventoryAndPrices.clickSyncInvRatesBtn();
+	// Thread.sleep(5000);
+	
+	// System.out.println("Setting Sync Date Range...");
+	// inventoryAndPrices.setSyncDateRange("2026/04/29", "2026/05/01");
+	// Thread.sleep(2000);
+	
+	// System.out.println("Clicking Start Sync Button...");
+	// inventoryAndPrices.clickStartSyncBtn();
+	// Thread.sleep(5000);
+
 	System.out.println("Inventory and Pricing Sync Test Executed");
 }
 

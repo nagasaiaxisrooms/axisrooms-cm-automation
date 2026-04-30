@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-21T11:05:31 IST" name="Surefire suite" finished-at="2026-04-21T11:07:19 IST" duration-ms="108600">
+    <groups>
+    </groups>
+    <test started-at="2026-04-21T11:05:31 IST" name="Surefire test" finished-at="2026-04-21T11:07:19 IST" duration-ms="108600">
+      <class name="testcases.EndToEndSyncTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.EndToEndSyncTest@4445629]" started-at="2026-04-21T11:05:31 IST" name="setup" finished-at="2026-04-21T11:05:34 IST" duration-ms="2916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="e2eInventorySyncTest()[pri:1, instance:testcases.EndToEndSyncTest@4445629]" started-at="2026-04-21T11:05:34 IST" name="e2eInventorySyncTest" finished-at="2026-04-21T11:05:44 IST" duration-ms="10555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- e2eInventorySyncTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.EndToEndSyncTest@4445629]" started-at="2026-04-21T11:05:44 IST" name="tearDown" finished-at="2026-04-21T11:05:44 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.EndToEndSyncTest -->
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:05:44 IST" name="setup" finished-at="2026-04-21T11:05:47 IST" duration-ms="2216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validLoginTest()[pri:1, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:05:47 IST" name="validLoginTest" finished-at="2026-04-21T11:05:55 IST" duration-ms="8466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:05:55 IST" name="tearDown" finished-at="2026-04-21T11:05:55 IST" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:05:55 IST" name="setup" finished-at="2026-04-21T11:05:57 IST" duration-ms="2149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithUnregisteredEmail()[pri:2, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:05:57 IST" name="loginWithUnregisteredEmail" finished-at="2026-04-21T11:06:04 IST" duration-ms="6309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithUnregisteredEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:06:04 IST" name="tearDown" finished-at="2026-04-21T11:06:04 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:06:04 IST" name="setup" finished-at="2026-04-21T11:06:06 IST" duration-ms="2107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithWrongPassword()[pri:3, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:06:06 IST" name="loginWithWrongPassword" finished-at="2026-04-21T11:06:12 IST" duration-ms="6308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithWrongPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:06:12 IST" name="tearDown" finished-at="2026-04-21T11:06:12 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:06:12 IST" name="setup" finished-at="2026-04-21T11:06:14 IST" duration-ms="2042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validLoginwithOTPLogin()[pri:4, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:06:14 IST" name="validLoginwithOTPLogin" finished-at="2026-04-21T11:06:24 IST" duration-ms="9437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginwithOTPLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:06:24 IST" name="tearDown" finished-at="2026-04-21T11:06:24 IST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:06:24 IST" name="setup" finished-at="2026-04-21T11:06:28 IST" duration-ms="3885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="inventoryAndPricingSyncTest()[pri:5, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:06:28 IST" name="inventoryAndPricingSyncTest" finished-at="2026-04-21T11:07:19 IST" duration-ms="51715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inventoryAndPricingSyncTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@be64738]" started-at="2026-04-21T11:07:19 IST" name="tearDown" finished-at="2026-04-21T11:07:19 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
